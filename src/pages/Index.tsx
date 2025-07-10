@@ -41,9 +41,9 @@ const services = [
 ];
 
 const coverImages = [
-  { src: "/src/images/foto1.jpg", alt: "Foto Sampul 1" },
-  { src: "/src/images/foto2.jpg", alt: "Foto Sampul 2" },
-  { src: "/src/images/foto3.jpg", alt: "Foto Sampul 3" },
+  { src: "/assets/images/foto1.jpg", alt: "Foto Sampul 1" },
+  { src: "/assets/images/foto2.jpg", alt: "Foto Sampul 2" },
+  { src: "/assets/images/foto3.jpg", alt: "Foto Sampul 3" },
 ];
 
 const Index = () => {
@@ -81,7 +81,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-4">
-                <img src="/src/images/logo bumi auto.png" alt="Bumi Auto Logo" className="h-12 w-auto"/>
+                <img src="/assets/images/logo bumi auto.png" alt="Bumi Auto Logo" className="h-12 w-auto"/>
                 <div className="h-8 w-px bg-gray-300"></div>
               </div>
             </div>
