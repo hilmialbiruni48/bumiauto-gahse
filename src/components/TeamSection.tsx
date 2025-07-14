@@ -5,48 +5,48 @@ import { Mail, Phone, Shield, Users } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Ahmad Wijaya",
-    position: "Manager GA & HSE",
-    department: "GA & HSE",
-    email: "ahmad.wijaya@bumiauto.com",
+    name: "Pak Fajar",
+    position: "Manager HCBP GA & HSE",
+    department: "HCBP",
+    email: "lorem@bumiauto.com",
     phone: "Ext. 5501",
     avatar: "/placeholder.svg",
-    initials: "AW",
-    description: "Memimpin operasional GA & HSE dengan pengalaman 10+ tahun",
-    speciality: "Leadership & Strategy"
+    initials: "FJ",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
   },
   {
-    name: "Sari Indrawati",
-    position: "Senior GA Officer",
+    name: "Mas Abi",
+    position: "GA Officer",
     department: "General Affair",
-    email: "sari.indrawati@bumiauto.com",
+    email: "lorem@bumiauto.com",
     phone: "Ext. 5502",
     avatar: "/placeholder.svg",
-    initials: "SI",
-    description: "Mengelola fasilitas kantor dan layanan administratif",
-    speciality: "Facility Management"
+    initials: "AB",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
   },
   {
-    name: "Budi Santoso",
-    position: "HSE Specialist",
-    department: "Health Safety Environment",
-    email: "budi.santoso@bumiauto.com",
+    name: "Mba Vanya",
+    position: "GA Officer",
+    department: "General Affair",
+    email: "lorem@bumiauto.com",
     phone: "Ext. 5503",
     avatar: "/placeholder.svg",
-    initials: "BS",
-    description: "Ahli keselamatan kerja dan audit lingkungan",
-    speciality: "Safety & Environment"
+    initials: "VA",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
   },
   {
-    name: "Maya Putri",
-    position: "IT Support Coordinator",
+    name: "Mba Nanad",
+    position: "HSE Specialist",
     department: "General Affair",
-    email: "maya.putri@bumiauto.com",
+    email: "lorem@bumiauto.com",
     phone: "Ext. 5504",
     avatar: "/placeholder.svg",
-    initials: "MP",
-    description: "Koordinator layanan IT dan technical support",
-    speciality: "IT Infrastructure"
+    initials: "NN",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
   }
 ];
 
@@ -101,10 +101,6 @@ const TeamSection = () => {
                 <div className="flex items-center space-x-2 text-sm">
                   <Mail className="h-4 w-4 text-bumi-blue" />
                   <span className="text-gray-600 truncate">{member.email}</span>
-                </div>
-                <div className="flex items-center space-x-2 text-sm">
-                  <Phone className="h-4 w-4 text-bumi-blue" />
-                  <span className="text-gray-600">{member.phone}</span>
                 </div>
               </div>
               
