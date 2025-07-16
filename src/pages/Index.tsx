@@ -1,6 +1,5 @@
-
 import { Calendar, MapPin, Users, Shield, Headphones, Building, Car, Receipt, Mail } from "lucide-react";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ServiceCard from "@/components/ServiceCard";
 import InfoSection from "@/components/InfoSection";
 import AboutSection from "@/components/AboutSection";
@@ -49,8 +48,30 @@ const coverImages = [
 const Index = () => {
   const [currentCover, setCurrentCover] = useState(0);
   const [fade, setFade] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Auto slideshow effect
+  useEffect(() => {
+    // Clear any previous interval
+    if (intervalRef.current) clearInterval(intervalRef.current);
+
+    intervalRef.current = setInterval(() => {
+      setFade(true);
+      setTimeout(() => {
+        setCurrentCover((prev) => (prev + 1) % coverImages.length);
+        setFade(false);
+      }, 300);
+    }, 10000); // 10 seconds
+
+    // Cleanup on unmount
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
+  }, [currentCover]);
+
+  // Manual controls: clear interval to avoid double transition
   const nextCover = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
     setFade(true);
     setTimeout(() => {
       setCurrentCover((prev) => (prev + 1) % coverImages.length);
@@ -59,6 +80,7 @@ const Index = () => {
   };
 
   const prevCover = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
     setFade(true);
     setTimeout(() => {
       setCurrentCover((prev) => (prev - 1 + coverImages.length) % coverImages.length);
@@ -67,6 +89,7 @@ const Index = () => {
   };
 
   const goToCover = (idx: number) => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
     setFade(true);
     setTimeout(() => {
       setCurrentCover(idx);
@@ -152,7 +175,7 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <AboutSection />
+        {/* <AboutSection /> */}
 
         {/* Team Section */}
         <TeamSection />
@@ -179,7 +202,7 @@ const Index = () => {
             </div>
             <div className="flex items-center justify-center space-x-2 bg-bumi-blue/20 px-4 py-2 rounded-lg">
               <Mail className="h-5 w-5 text-bumi-blue" />
-              <span className="text-bumi-navy font-medium">helpdesk.hakaauto.co.id</span>
+              <span className="text-bumi-navy font-medium">helpdesk@hakaauto.co.id</span>
             </div>
           </div>
         </section>

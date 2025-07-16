@@ -46,7 +46,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* <div className="bg-white rounded-lg shadow-md p-8 border border-bumi-light-blue/30">
+      <div className="bg-white rounded-lg shadow-md p-8 border border-bumi-light-blue/30">
         <div className="text-center">
           <h4 className="text-2xl font-bold text-bumi-navy mb-6">Visi & Misi</h4>
           
@@ -70,7 +70,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
