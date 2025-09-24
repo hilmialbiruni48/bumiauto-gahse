@@ -32,7 +32,10 @@ const ServiceCard = ({ title, description, icon: Icon, link, color }: ServiceCar
       >
         Akses Layanan
       </Button>
+    
     </div>
+
+    
   );
 };
 

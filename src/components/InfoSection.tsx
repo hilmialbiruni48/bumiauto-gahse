@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 
 
 const hseImages = [
-  { src: "/assets/images/foto1.jpg", alt: "Foto Sampul 1" },
-  { src: "/assets/images/foto2.jpg", alt: "Foto Sampul 2" },
-  { src: "/assets/images/foto3.jpg", alt: "Foto Sampul 3" },
+  { src: "/assets/images/HAKA-GROWTH.jpg", alt: "HAKA Growth Podcast #1" },
+  { src: "/assets/images/DEADLINE.png", alt: "Deadline Konfirmasi Kehadiran di ESS Bumi Auto" },
+  { src: "/assets/images/CONNECT.jpg", alt: "Don't Forget to Follow All Social Media Bumi Auto! 🤩" },
 ];
 
 const InfoSection = () => {
@@ -32,11 +32,11 @@ const InfoSection = () => {
         <div className="bg-white rounded-lg shadow-md p-8 border border-bumi-light-blue/30">
           <div className="flex items-center mb-6">
             <Users className="h-8 w-8 text-bumi-blue mr-3" />
-            <h3 className="text-2xl font-bold text-bumi-navy">General Affair & HSE</h3>
+            <h3 className="text-2xl font-bold text-bumi-navy">General Affair & ICT</h3>
           </div>
           
           <p className="text-gray-600 mb-6 leading-relaxed">
-            General Affair & HSE Department merupakan departemen dari perusahaan PT. Bumi Investa Utama yang memberi pelayanan kepada unit kerja lain dalam hal administrasi dan pengelolaan pelayanan rutin biaya kantor dan biaya umum diantaranya : 
+            General Affair & ICT Department merupakan departemen dari Bumi Auto yang memberi pelayanan kepada unit kerja lain dalam hal administrasi dan pengelolaan pelayanan rutin biaya kantor dan biaya umum diantaranya :
           </p>
           
           <div className="space-y-3">

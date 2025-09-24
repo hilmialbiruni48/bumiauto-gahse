@@ -18,9 +18,9 @@ const services = [
   },
   {
     title: "Peminjaman Ruangan",
-    description: "Booking dan reservasi ruang meeting di Cyber 2 Tower",
+    description: "Booking dan reservasi ruang meeting di Cyber 2 Tower Lt.32",
     icon: Building,
-    link: "#room-booking",
+    link: 'https://forms.gle/Bg6FeqZ41oZ7w5A29',
     color: "bg-bumi-light-blue"
   },
   {
@@ -36,13 +36,14 @@ const services = [
     icon: Receipt,
     link: "#reimburse",
     color: "bg-primary"
+    
   }
 ];
 
 const coverImages = [
-  { src: "/assets/images/foto1.jpg", alt: "Foto Sampul 1" },
-  { src: "/assets/images/foto2.jpg", alt: "Foto Sampul 2" },
-  { src: "/assets/images/foto3.jpg", alt: "Foto Sampul 3" },
+  { src: "/assets/images/DSC00538.JPG", alt: "Foto Sampul 1" },
+  { src: "/assets/images/DSC00189.JPG", alt: "Foto Sampul 2" },
+  { src: "/assets/images/KAC08814.jpg", alt: "Foto Sampul 3" },
 ];
 
 const Index = () => {
@@ -153,11 +154,11 @@ const Index = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
-            Selamat Datang di Portal GA & HSE
+            Selamat Datang di Portal GA & ICT
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Portal terpusat untuk seluruh kebutuhan layanan General Affair dan Health Safety Environment. 
-            Untuk memenuhi kebutuhan operasional departemen Bapak/Ibu, kami dari General Affair & HSE Department hadir untuk memberikan pelayanan terbaik buat Anda.
+            Portal terpusat untuk seluruh kebutuhan layanan General Affair dan ICT. 
+            Untuk memenuhi kebutuhan operasional departemen Bapak/Ibu, kami dari General Affair & ICT Department hadir untuk memberikan pelayanan terbaik buat Anda.
           </p>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Silahkan mengajukan pesanan sesuai kebutuhan Bapak/Ibu di bawah ini. 
@@ -193,7 +194,7 @@ const Index = () => {
         <section className="bg-white rounded-lg shadow-md p-8 text-center">
           <h3 className="text-2xl font-bold text-bumi-navy mb-4">Butuh Bantuan?</h3>
           <p className="text-gray-600 mb-6">
-            Tim GA & HSE siap membantu Anda. Hubungi kami melalui channel yang tersedia.
+            Tim GA & ICT siap membantu Anda. Hubungi kami melalui channel yang tersedia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="flex items-center justify-center space-x-2 bg-bumi-light-blue/20 px-4 py-2 rounded-lg">
@@ -211,7 +212,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-bumi-navy text-white py-8 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2025 GA & HSE Portal - Bumi Auto. All rights reserved.</p>
+          <p>&copy; 2025 GA & ICT Portal - Bumi Auto. All rights reserved.</p>
         </div>
       </footer>
     </div>

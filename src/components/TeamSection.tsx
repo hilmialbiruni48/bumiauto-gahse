@@ -6,9 +6,9 @@ import { Mail, Phone, Shield, Users } from "lucide-react";
 const teamMembers = [
   {
     name: "Pak Fajar",
-    position: "Manager HCBP GA & HSE",
+    position: "Manager HCBP & GA",
     department: "HCBP",
-    email: "lorem@bumiauto.com",
+    email: "fajar.asis@hakaauto.co.id",
     phone: "Ext. 5501",
     avatar: "/placeholder.svg",
     initials: "FJ",
@@ -16,10 +16,21 @@ const teamMembers = [
     speciality: "Lorem ipsum"
   },
   {
+    name: "Mba Nadia",
+    position: "Assistant Manager GA",
+    department: "HCBP",
+    email: "nadia.massali@hakaauto.co.id",
+    phone: "Ext. 5501",
+    avatar: "/placeholder.svg",
+    initials: "ND",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
+  },
+  {
     name: "Mas Abi",
     position: "GA Officer",
     department: "General Affair",
-    email: "lorem@bumiauto.com",
+    email: "abi.rafdi@hakaauto.co.id",
     phone: "Ext. 5502",
     avatar: "/placeholder.svg",
     initials: "AB",
@@ -27,27 +38,49 @@ const teamMembers = [
     speciality: "Lorem ipsum"
   },
   {
-    name: "Mba Vanya",
+    name: "Mba Aulia",
     position: "GA Officer",
     department: "General Affair",
-    email: "lorem@bumiauto.com",
+    email: "aulia.septiani@hakaauto.co.id",
     phone: "Ext. 5503",
     avatar: "/placeholder.svg",
-    initials: "VA",
+    initials: "AL",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     speciality: "Lorem ipsum"
   },
   {
-    name: "Mba Nanad",
-    position: "HSE Specialist",
+    name: "Mba Rara",
+    position: "Asset Management Officer",
     department: "General Affair",
-    email: "lorem@bumiauto.com",
+    email: "reydira.fathia@hakaauto.co.id",
     phone: "Ext. 5504",
     avatar: "/placeholder.svg",
-    initials: "NN",
+    initials: "RR",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     speciality: "Lorem ipsum"
-  }
+  },
+  {
+    name: "Mas Hilmi",
+    position: "ICT Officer",
+    department: "SQBI",
+    email: "ict@hakaauto.co.id",
+    phone: "Ext. 5503",
+    avatar: "/placeholder.svg",
+    initials: "HB",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
+  },
+  {
+    name: "Mas Yudha",
+    position: "IT Support",
+    department: "SQBI",
+    email: "yudha.firnanda@hakaauto.co.id",
+    phone: "Ext. 5503",
+    avatar: "/placeholder.svg",
+    initials: "YF",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    speciality: "Lorem ipsum"
+  },
 ];
 
 const TeamSection = () => {
@@ -57,7 +90,7 @@ const TeamSection = () => {
         <h3 className="text-3xl font-bold text-white mb-4">Tim Kami</h3>
         <p className="text-xl text-white/90 max-w-3xl mx-auto">
           Tim profesional yang berdedikasi untuk memberikan layanan terbaik 
-          dalam bidang General Affair dan Health Safety Environment.
+          dalam bidang General Affair dan ICT.
         </p>
       </div>
 
@@ -93,9 +126,9 @@ const TeamSection = () => {
             </CardHeader>
             
             <CardContent className="pt-0">
-              <p className="text-gray-600 text-sm mb-4 text-center leading-relaxed">
+              {/* <p className="text-gray-600 text-sm mb-4 text-center leading-relaxed">
                 {member.description}
-              </p>
+              </p> */}
               
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-sm">
@@ -104,11 +137,11 @@ const TeamSection = () => {
                 </div>
               </div>
               
-              <div className="mt-4 p-2 bg-bumi-light-blue/10 rounded-lg">
+              {/* <div className="mt-4 p-2 bg-bumi-light-blue/10 rounded-lg">
                 <p className="text-xs text-bumi-navy font-medium text-center">
                   {member.speciality}
                 </p>
-              </div>
+              </div> */}
             </CardContent>
           </Card>
         ))}

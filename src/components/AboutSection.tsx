@@ -7,8 +7,8 @@ const AboutSection = () => {
       <div className="text-center mb-12">
         <h3 className="text-3xl font-bold text-white mb-4">Tentang Kami</h3>
         <p className="text-xl text-white/90 max-w-4xl mx-auto">
-          GA & HSE Portal adalah pusat layanan terpadu yang menghubungkan seluruh kebutuhan 
-          operasional dan keselamatan kerja di Bumi Auto.
+          GA & ICT Portal adalah pusat layanan terpadu yang menghubungkan seluruh kebutuhan 
+          operasional dan teknikal di Bumi Auto.
         </p>
       </div>
 
